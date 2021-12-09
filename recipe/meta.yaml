@@ -1,5 +1,5 @@
 {% set name = "large-image-source-gdal" %}
-{% set version = "1.8.9" %}
+{% set version = "1.8.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 80e6b253ecc93ceccf3a3195ba0bbe3e93229adfe9068edc7051fa34edb93747
+  sha256: 4a9abb6ec8275f4e9d21d83d20f69f9ea41f6d184fa3938fe79de12f382661e1
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.6
-    - large-image =={{ version }}
+    - large-image
     - gdal
     - pyproj >=2.2.0
     - palettable
