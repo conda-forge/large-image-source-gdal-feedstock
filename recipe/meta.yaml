@@ -21,7 +21,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.6
-    - large-image >=1.14
+    - large-image >=1.14.2
     - gdal
     - pyproj >=2.2.0
     - packaging
