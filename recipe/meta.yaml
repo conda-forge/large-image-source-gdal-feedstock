@@ -10,17 +10,17 @@ source:
   sha256: fd4fd83f835dcf24dc72b3d601ea6cc93b79481105105563e63fb1786460901b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.8
     - large-image >=1.14.2
     - gdal
     - pyproj >=2.2.0
