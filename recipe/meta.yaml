@@ -1,5 +1,5 @@
 {% set name = "large-image-source-gdal" %}
-{% set version = "1.29.4" %}
+{% set version = "1.29.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 68305333963b214ec5436af80b31960a6199fce07eae6781e578a6b4f7f6b1f2
+  sha256: 579d0a33695f5cb300869fd83b2b7533b78d03b54c1975b062c0cce44f25db85
 
 build:
   number: 0
