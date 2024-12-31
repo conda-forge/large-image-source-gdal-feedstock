@@ -10,23 +10,25 @@ source:
   sha256: 308e5cc51bbc31763d25e31edc1a62b5bfbba3997fa4a0c77133554f304f1a0e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - large-image >=1.14.2
     - gdal
     - pyproj >=2.2.0
     - packaging
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - large_image
     - large_image_source_gdal
