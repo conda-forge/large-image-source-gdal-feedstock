@@ -1,5 +1,5 @@
 {% set name = "large-image-source-gdal" %}
-{% set version = "1.35.3" %}
+{% set version = "1.35.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 82caafcd15f6f42e4123b1bdbe610332a0e7dd19e5467afa5f3f300d91697f50
+  sha256: 647e032e4a56f478c21629ff76c1c06311d09dbeba613b48b5d2e3134436830d
 
 build:
   number: 0
